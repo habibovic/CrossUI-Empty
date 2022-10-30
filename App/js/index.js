@@ -19,7 +19,27 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"sabah_button")
+                .setName("sabah_button")
+                .setLeft("3.8095238095238093em")
+                .setTop("7.619047619047619em")
+                .setWidth("6.019047619047619em")
+                .setCaption("Sabah")
+                .onContextmenu([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "control",
+                        "target" : "sabah_button",
+                        "args" : [ ],
+                        "method" : "fireClickEvent",
+                        "event" : 1
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
