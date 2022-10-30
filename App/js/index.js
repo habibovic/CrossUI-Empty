@@ -39,13 +39,28 @@ xui.Class('App', 'xui.Module',{
                         "event" : 1
                     }
                 ])
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [
+                            "Ovo je Sabah",
+                            "Testna poruka",
+                            200,
+                            5000
+                        ],
+                        "method" : "message",
+                        "event" : 1
+                    }
+                ])
             );
             
             append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label18")
                 .setLeft("19.375em")
-                .setTop("1.25em")
+                .setTop("1.875em")
                 .setWidth("10.81904761904762em")
                 .setHeight("1.980952380952381em")
                 .setCaption("Ovo je testna aplikacija")
