@@ -24,8 +24,8 @@ xui.Class('App', 'xui.Module',{
                 xui.create("xui.UI.Button")
                 .setHost(host,"sabah_button")
                 .setName("sabah_button")
-                .setLeft("3.8095238095238093em")
-                .setTop("7.619047619047619em")
+                .setLeft("2.2857142857142856em")
+                .setTop("34.285714285714285em")
                 .setWidth("6.019047619047619em")
                 .setCaption("Sabah")
                 .onContextmenu([
@@ -38,6 +38,22 @@ xui.Class('App', 'xui.Module',{
                         "event" : 1
                     }
                 ])
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label18")
+                .setLeft("19.375em")
+                .setTop("3.125em")
+                .setWidth("10.81904761904762em")
+                .setHeight("1.980952380952381em")
+                .setCaption("Ovo je testna aplikacija")
+                .setCustomStyle({
+                    "KEY" : {
+                        "font-size" : "16px",
+                        "font-style" : "oblique"
+                    }
+                })
             );
             
             return children;
